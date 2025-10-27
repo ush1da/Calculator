@@ -1,0 +1,7 @@
+*.o
+*.obj
+a.out
+*.exe
+calculator_app
+calculator_app.exe
+.vscode/
