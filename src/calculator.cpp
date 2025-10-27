@@ -8,13 +8,13 @@ int main()
     double num1, num2;
     char op;
 
-    cout << "Простий Консольний Калькулятор\n";
+    cout << "Simple Console Calculator\n";
     // Пізніше можна реалізувати цикл для підтримки кількох операцій без перезапуску.
-    cout << "Введіть: число оператор число (наприклад, 10 + 5):\n";
+    cout << "Enter: number operator number (e.g. 10 + 5):\n";
 
     if (!(cin >> num1 >> op >> num2)) 
     {
-        cerr << "Помилка вводу!\n";
+        cerr << "Input error!\n";
         return 1;
     }
 
@@ -31,16 +31,16 @@ int main()
             } 
             else 
             {
-                cerr << "Помилка: Ділення на нуль!\n";
+                cerr << "Error: Division by zero!\n";
                 return 2;
             }
             break;
         default:
-            cerr << "Помилка: Невідома операція.\n";
+            cerr << "Error: Unknown operation.\n";
             return 3;
     }
 
     // Використовуємо iomanip для виводу з фіксованою точністю (2 знаки після коми).
-    cout << "Результат: " << fixed << setprecision(2) << result << "\n";
+    cout << "Result: " << fixed << setprecision(2) << result << "\n";
     return 0;
 }
